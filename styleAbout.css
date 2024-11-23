@@ -1,0 +1,270 @@
+.header {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Center vertically */
+    padding: 15px 30px; 
+    height: 115px;
+    position: fixed; /* Fix the position at the top */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+
+.header .logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Aligns images one above the other */
+    align-items: center; /* Centers the logo within the header */
+    margin-left: 50px;
+}
+
+.logo-top {
+    width: 300px; /* Adjust this size as needed */
+    margin-bottom: 5px; /* Adds space between the two parts of the logo */
+}
+
+.logo-bottom {
+    width: 150px; 
+}
+
+.header .logo-top {
+    margin-bottom: 5px; 
+}
+
+/* Navigation links styling */
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.2rem; /* Font size for links */
+    margin-left: 20px; /* Space between links */
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #007BFF; 
+}
+
+body, main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 130vh;
+    background-color: #EAEAEA;
+    padding-top: 60px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Section Styling */
+.insurance-brokers {
+    display: flex;
+    gap: 270px;
+    padding: 50px;
+    max-width: 900px;
+}
+
+/* Left Content Styling */
+.left-content {
+    max-width: 800px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.title-container h2 {
+    background-color: #dddddd; 
+    color: #333333; 
+    padding: 15px 20px; 
+    border-radius: 8px; 
+    display: inline-block; 
+    text-align: center; 
+    margin: 0 auto; 
+    font-family: 'Montserrat', sans-serif;
+    font: 1.2rem;
+}
+
+.left-content p {
+    color: #666666;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding: 0 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center; /* Vertically align icon and heading */
+}
+
+.right-list {
+    margin-top: 90px; /* Moves the list further down */
+}
+
+.right-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-list li {
+    background-color: #c5d4e0;
+    color: #666666;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.17rem;
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Highlighted List Item */
+.right-list .highlight {
+    background-color: #c5d4e0;
+    color: #333;
+}
+
+.right-list .highlight .arrow {
+    position: absolute;
+    right: -30px; /* Spacing */
+    font-size: 1.8rem; /* Arrow size */
+    color: #333333;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.our-policies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.policy-content {
+    text-align: center;
+}
+
+/* Policy Buttons Styling */
+.policy-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 150px); /* buttons per row */
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.button-link {
+    display: flex;
+    flex: 1 1 22%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none; 
+    color: #333333; 
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 2px solid #0A2E4E;
+    border-radius: 5px;
+    background-color: #c5d4e0;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-link:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+    color: #0A2E4E;
+}
+
+.carriers {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Styling for the Carrier Section */
+.carrier-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.carrier-grid a {
+    display: inline-block;
+    width: 200px; /* Set a uniform width */
+    height: 200px; /* Set a uniform height */
+    overflow: hidden;
+}
+
+.carrier-grid a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; 
+}
+
+.carrier-grid a img.carrier3 {
+    max-width: 500px;
+}
+
+.carrier-grid a img.carrier4 {
+    max-width: 500px;
+}
+
+.carrier-grid a img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #EAEAEA;
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align the content */
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    gap: 40px; /* Space between the logos */
+}
+
+.footer-logo {
+    width: 50px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 12px;
+}
+
+.footer-logo-lean{
+    width: 70px;
+    height: auto;
+}
+
+/* Optional: Add hover effect */
+.footer-logo:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}

@@ -1,0 +1,187 @@
+.header {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Center vertically */
+    padding: 15px 30px; /* Padding around the header */
+    height: 115px;
+    position: fixed; /* Fix the position at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header .logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Aligns images one above the other */
+    align-items: center; /* Centers the logo within the header */
+    margin-left: 50px;
+}
+
+.logo-top {
+    width: 300px; /* Adjust this size as needed */
+    margin-bottom: 5px; /* Adds space between the two parts of the logo */
+}
+
+.logo-bottom {
+    width: 150px; /* Adjust this size independently */
+}
+
+.header .logo-top {
+    margin-bottom: 5px; /* Adjust spacing between images */
+}
+
+/* Navigation links styling */
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333333;
+    font-size: 1.2rem; /* Font size for links */
+    margin-left: 20px; /* Space between links */
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #007BFF; /* Change color on hover to a professional blue */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;/* Space for the fixed header */
+}
+
+h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAEAEA; 
+    padding-top: 150px;
+}
+
+.contacts-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+.contact-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.contact-card {
+    background: #DDDDDD;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+.contact-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.contact-position {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #4A90E2  ;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #EAEAEA;
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align the content */
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    gap: 40px; /* Space between the logos */
+}
+
+.footer-logo {
+    width: 50px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 12px;
+}
+
+.footer-logo-lean{
+    width: 70px;
+    height: auto;
+}
+
+/* Optional: Add hover effect */
+.footer-logo:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .intro-content {        
+        flex-direction: column; 
+    }
+
+    .intro-image, .intro-text {
+        width: 100%; 
+    }
+
+    .intro-image {
+        margin-bottom: 20px;
+    }
+}

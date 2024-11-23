@@ -1,0 +1,167 @@
+.header {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Center vertically */
+    padding: 15px 30px; /* Padding around the header */
+    height: 115px;
+    position: fixed; /* Fix the position at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header .logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Aligns images one above the other */
+    align-items: center; /* Centers the logo within the header */
+    margin-left: 50px;
+}
+
+.logo-top {
+    width: 300px; /* Adjust this size as needed */
+    margin-bottom: 5px; /* Adds space between the two parts of the logo */
+}
+
+.logo-bottom {
+    width: 150px; /* Adjust this size independently */
+}
+
+.header .logo-top {
+    margin-bottom: 5px; /* Adjust spacing between images */
+}
+
+/* Navigation links styling */
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333333;
+    font-size: 1.2rem; /* Font size for links */
+    margin-left: 20px; /* Space between links */
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #007BFF; /* Change color on hover to a professional blue */
+}
+
+/* Body Styling */
+body {
+    padding-top: 120px; /* Space for fixed header */
+    background-color: #EAEAEA; 
+}
+
+/* Training Sections */
+.training-section {
+    padding: 60px 20px;
+    background-color: #DDDDDD;
+    max-width: 1500px; 
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.training-section h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -30px;
+
+}
+
+.training-section p {
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Training Material: Video and Workflow Image */
+.training-material {
+    gap: 20px; /* Space between video and image */
+    align-items: center;
+}
+
+video {
+    display: block; /* Makes the video a block element, so it takes up the full width and doesn't align inline with other elements */
+    margin: 0 auto; /* Centers the video horizontally */
+    max-width: 600px;
+}
+
+.training-section a {
+    display: block;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline */
+    color: #333333; /* Same color as before */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 2px solid #0A2E4E;
+    border-radius: 5px;
+    background-color: #c5d4e0;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px auto;
+}
+
+.training-section a:hover {
+    transform: scale(1.05);
+    color: #0A2E4E;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .training-material {
+        flex-direction: row; 
+    }
+}
+
+.footer {
+    background-color: #EAEAEA;
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align the content */
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    gap: 40px; /* Space between the logos */
+}
+
+.footer-logo {
+    width: 50px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 12px;
+}
+
+.footer-logo-lean{
+    width: 70px;
+    height: auto;
+}
+
+/* Optional: Add hover effect */
+.footer-logo:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .training-section {
+        padding: 40px 15px;
+    }
+}

@@ -1,0 +1,170 @@
+.header {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Center vertically */
+    padding: 15px 30px; /* Padding around the header */
+    height: 115px;
+    position: fixed; /* Fix the position at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header .logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Aligns images one above the other */
+    align-items: center; /* Centers the logo within the header */
+    margin-left: 50px;
+}
+
+.logo-top {
+    width: 300px; /* Adjust this size as needed */
+    margin-bottom: 5px; /* Adds space between the two parts of the logo */
+}
+
+.logo-bottom {
+    width: 150px; /* Adjust this size independently */
+}
+
+.header .logo-top {
+    margin-bottom: 5px; /* Adjust spacing between images */
+}
+
+/* Navigation links styling */
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333333;
+    font-size: 1.2rem; /* Font size for links */
+    margin-left: 20px; /* Space between links */
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 40px;
+}
+
+.nav-links a:hover {
+    color: #007BFF; /* Change color on hover to a professional blue */
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 90px; /* Space for the fixed header */
+}
+
+/* Intro Section */
+.intro {
+    background-color: #EAEAEA;
+    padding: 30px 20px;
+    min-height: calc(100vh - 120px); /* Fill the remaining height, adjusting for header */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+    align-items: center;
+}
+
+.intro-image {
+    width: 50%; /* Adjust size of the image */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.intro-text {
+    width: 50%; /* Adjust size of the text section */
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600; /* Semi-bold for heading */
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    font-weight: 400; /* Regular weight for paragraph */
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px; /* Space between text and button */
+    padding: 10px 20px;
+    background-color: #c5d4e0; /* Professional blue color */
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #4A90E2; /* Darker blue on hover */
+}
+
+/* Navigation links */
+.nav-links a {
+    font-weight: 500; /* Medium weight for navigation links */
+}
+
+.footer {
+    background-color: #EAEAEA;
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align the content */
+    margin-top: -50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    gap: 40px; /* Space between the logos */
+}
+
+.footer-logo {
+    width: 50px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 12px;
+}
+
+.footer-logo-lean{
+    width: 70px;
+    height: auto;
+}
+
+/* Optional: Add hover effect */
+.footer-logo:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .intro-content {        
+        flex-direction: column; 
+    }
+
+    .intro-image, .intro-text {
+        width: 100%; 
+    }
+
+    .intro-image {
+        margin-bottom: 20px;
+    }
+}
